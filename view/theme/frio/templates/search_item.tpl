@@ -51,10 +51,10 @@
 				{{/if}}
 				{{if $item.lock}}
 					<span class="navicon lock fakelink" onClick="lockview(event, 'item', {{$item.id}});" title="{{$item.lock}}">
-						&nbsp;<small><i class="fa fa-lock" aria-hidden="true"></i></small>
+						&nbsp;<small><i class="fa ri-git-repository-private-line" aria-hidden="true"></i></small>
 					</span>
 				{{elseif $item.connector}}
-					<span class="fa fa-lock" title="{{$item.connector}}"></span>
+					<span class="fa ri-git-repository-private-line" title="{{$item.connector}}"></span>
 				{{/if}}
 					<div class="additional-info text-muted">
 						<div id="wall-item-ago-{{$item.id}}" class="wall-item-ago">
@@ -123,7 +123,7 @@
 				{{/foreach}}
 
 				{{foreach $item.mentions as $tag}}
-					<span class="mention label btn-warning sm">{{$tag nofilter}} <i class="fa fa-user" aria-hidden="true"></i></span>
+					<span class="mention label btn-warning sm">{{$tag nofilter}} <i class="fa ri-user-6-line" aria-hidden="true"></i></span>
 				{{/foreach}}
 			{{/if}}
 
@@ -171,7 +171,7 @@
 							{{if $item.vote.like OR $item.vote.dislike OR $item.comment_html}}
 					<span role="presentation" class="separator">•</span>
 							{{/if}}
-					<button type="button" class="btn btn-default" id="share-{{$item.id}}" title="{{$item.vote.share.0}}" onclick="jotShare({{$item.id}});"><i class="fa fa-retweet" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-default" id="share-{{$item.id}}" title="{{$item.vote.share.0}}" onclick="jotShare({{$item.id}});"><i class="fa ri-repeat-line" aria-hidden="true"></i></button>
 						{{/if}}
 					{{/if}}
 
@@ -183,7 +183,7 @@
 						<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenuOptions-{{$item.id}}">
 						{{if $item.edpost}} {{* edit the posting *}}
 							<li role="menuitem">
-								<a href="javascript:editpost('{{$item.edpost.0}}?mode=none');" title="{{$item.edpost.1}}" class="btn-link navicon pencil"><i class="fa fa-pencil" aria-hidden="true"></i> {{$item.edpost.1}}</a>
+								<a href="javascript:editpost('{{$item.edpost.0}}?mode=none');" title="{{$item.edpost.1}}" class="btn-link navicon pencil"><i class="fa ri-edit-box-line" aria-hidden="true"></i> {{$item.edpost.1}}</a>
 							</li>
 						{{/if}}
 
@@ -215,7 +215,7 @@
 
 						{{if $item.follow_thread}}
 							<li role="menuitem">
-								<a id="follow_thread-{{$item.id}}" href="javascript:{{$item.follow_thread.action}}" class="btn-link" title="{{$item.follow_thread.title}}"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;{{$item.follow_thread.title}}</a>
+								<a id="follow_thread-{{$item.id}}" href="javascript:{{$item.follow_thread.action}}" class="btn-link" title="{{$item.follow_thread.title}}"><i class="fa ri-add-box-line" aria-hidden="true"></i>&nbsp;{{$item.follow_thread.title}}</a>
 							</li>
 						{{/if}}
 
@@ -226,12 +226,12 @@
 						{{/if}}
 
 						<li role="menuitem">
-							<a id="searchtext-{{$item.id}}" href="javascript:displaySearchText({{$item.uriid}});" class="btn-link filer-item search-icon" title="{{$item.searchtext}}"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;{{$item.searchtext}}</a>
+							<a id="searchtext-{{$item.id}}" href="javascript:displaySearchText({{$item.uriid}});" class="btn-link filer-item search-icon" title="{{$item.searchtext}}"><i class="fa ri-search-2-fill" aria-hidden="true"></i>&nbsp;{{$item.searchtext}}</a>
 						</li>
 
 						{{if $item.browsershare}}
 							<li role="menuitem" class="button-browser-share">
-								<a id="browser-share-{{$item.id}}" href="javascript:navigator.share({url: '{{$item.plink.orig}}'});" class="btn-link button-browser-share" title="{{$item.browsershare.1}}"><i class="fa fa-share-alt" aria-hidden="true"></i>&nbsp;{{$item.browsershare.0}}</a>
+								<a id="browser-share-{{$item.id}}" href="javascript:navigator.share({url: '{{$item.plink.orig}}'});" class="btn-link button-browser-share" title="{{$item.browsershare.1}}"><i class="fa ri-stackshare-line" aria-hidden="true"></i>&nbsp;{{$item.browsershare.0}}</a>
 							</li>
 						{{/if}}
 
@@ -250,7 +250,7 @@
 
 						{{if $item.drop && $item.drop.dropping}}
 							<li role="menuitem">
-								<a class="btn-link navicon delete" href="javascript:dropItem('item/drop/{{$item.id}}', 'item-{{$item.guid}}');" title="{{$item.drop.label}}"><i class="fa fa-trash" aria-hidden="true"></i> {{$item.drop.label}}</a>
+								<a class="btn-link navicon delete" href="javascript:dropItem('item/drop/{{$item.id}}', 'item-{{$item.guid}}');" title="{{$item.drop.label}}"><i class="fa ri-delete-bin-fill" aria-hidden="true"></i> {{$item.drop.label}}</a>
 							</li>
 							{{/if}}
 						</ul>
@@ -265,7 +265,7 @@
 					{{* Event attendance buttons *}}
 				{{if $item.isevent}}
 					<span class="vote-event">
-						<button type="button" class="btn btn-defaultbutton-event{{if $item.responses.attendyes.self}} active" aria-pressed="true{{/if}}" id="attendyes-{{$item.id}}" title="{{$item.attend.0}}" onclick="doActivityItemAction({{$item.id}}, 'attendyes'{{if $item.responses.attendyes.self}}, true{{/if}});"><i class="fa fa-check" aria-hidden="true"><span class="sr-only">{{$item.attend.0}}</span></i></button>
+						<button type="button" class="btn btn-defaultbutton-event{{if $item.responses.attendyes.self}} active" aria-pressed="true{{/if}}" id="attendyes-{{$item.id}}" title="{{$item.attend.0}}" onclick="doActivityItemAction({{$item.id}}, 'attendyes'{{if $item.responses.attendyes.self}}, true{{/if}});"><i class="fa ri-check-line" aria-hidden="true"><span class="sr-only">{{$item.attend.0}}</span></i></button>
 						<button type="button" class="btn btn-defaultbutton-event{{if $item.responses.attendno.self}} active" aria-pressed="true{{/if}}" id="attendno-{{$item.id}}" title="{{$item.attend.1}}" onclick="doActivityItemAction({{$item.id}}, 'attendno'{{if $item.responses.attendno.self}}, true{{/if}});"><i class="fa fa-times" aria-hidden="true"><span class="sr-only">{{$item.attend.1}}</span></i></button>
 						<button type="button" class="btn btn-defaultbutton-event{{if $item.responses.attendmaybe.self}} active" aria-pressed="true{{/if}}" id="attendmaybe-{{$item.id}}" title="{{$item.attend.2}}" onclick="doActivityItemAction({{$item.id}}, 'attendmaybe'{{if $item.responses.attendmaybe.self}}, true{{/if}});"><i class="fa fa-question" aria-hidden="true"><span class="sr-only">{{$item.attend.2}}</span></i></button>
 					</span>

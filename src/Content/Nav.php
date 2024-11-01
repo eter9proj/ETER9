@@ -295,10 +295,10 @@ class Nav
 
 		$nav['directory'] = [$gdirpath, $this->l10n->t('Directory'), '', $this->l10n->t('People directory')];
 
-		$nav['about'] = ['friendica', $this->l10n->t('Information'), '', $this->l10n->t('Information about this friendica instance')];
+		$nav['about'] = ['friendica', $this->l10n->t('ETER9 Project'), '', $this->l10n->t('A revolutionary concept set to transform the world')];
 
 		if ($this->config->get('system', 'tosdisplay')) {
-			$nav['tos'] = ['tos', $this->l10n->t('Terms of Service'), '', $this->l10n->t('Terms of Service of this Friendica instance')];
+			$nav['tos'] = ['tos', $this->l10n->t('Terms of Service'), '', $this->l10n->t('Terms of Service')];
 		}
 
 		// The following nav links are only show to logged-in users

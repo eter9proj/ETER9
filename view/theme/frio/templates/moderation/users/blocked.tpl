@@ -86,8 +86,8 @@
 							" title="{{$u.account_type}}">
 						</i>
 						{{/if}}
-						{{if $u.is_admin}}<i class="fa fa-user-secret text-primary" title="{{$siteadmin}}"></i>{{/if}}
-						{{if $u.blocked}}<i class="fa fa-ban text-danger" title="{{$blocked}}"></i>{{/if}}
+						{{if $u.is_admin}}<i class="fa ri-user-6-line-secret text-primary" title="{{$siteadmin}}"></i>{{/if}}
+						{{if $u.blocked}}<i class="fa ri-user-forbid-line text-danger" title="{{$blocked}}"></i>{{/if}}
 						{{if $u.account_expired}}<i class="fa fa-clock-o text-warning" title="{{$accountexpired}}"></i>{{/if}}
 					</td>
 				{{/if}}
@@ -132,11 +132,11 @@
 				{{if $u.is_deletable}}
 					{{if $u.blocked}}
 						<a href="{{$baseurl}}/moderation/users/blocked/unblock/{{$u.uid}}?t={{$form_security_token}}" class="admin-settings-action-link" title="{{$unblock}}">
-							<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+							<i class="fa ri-check-line-circle-o" aria-hidden="true"></i>
 						</a>
 					{{/if}}
 						<a href="{{$baseurl}}/moderation/users/blocked/delete/{{$u.uid}}?t={{$form_security_token}}" class="admin-settings-action-link" title="{{$delete}}" onclick="return confirm_delete('{{$confirm_delete}}','{{$u.name}}')">
-							<i class="fa fa-trash" aria-hidden="true"></i>
+							<i class="fa ri-delete-bin-fill" aria-hidden="true"></i>
 						</a>
 				{{else}}
 						&nbsp;
@@ -148,10 +148,10 @@
 		</table>
 		<div class="panel-footer">
 			<button type="submit" name="page_users_unblock" value="1" class="btn btn-primary">
-				<i class="fa fa-check-circle-o" aria-hidden="true"></i> {{$unblock}}
+				<i class="fa ri-check-line-circle-o" aria-hidden="true"></i> {{$unblock}}
 			</button>
 			<button type="submit" name="page_users_delete" value="1" class="btn btn-danger" onclick="return confirm_delete('{{$confirm_delete_multi}}')">
-				<i class="fa fa-trash" aria-hidden="true"></i> {{$delete}}
+				<i class="fa ri-delete-bin-fill" aria-hidden="true"></i> {{$delete}}
 			</button>
 		</div>
 		{{$pager nofilter}}

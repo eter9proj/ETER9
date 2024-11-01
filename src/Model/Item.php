@@ -3515,7 +3515,7 @@ class Item
 
 		if (!$attach) {
 			// Replace the blockquotes with quotes that are used in mails.
-			$mailquote = '<blockquote type="cite" class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex;">';
+			$mailquote = '<blockquote type="cite" class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #CCCCCC solid;padding-left:1ex;">';
 			$s = str_replace(['<blockquote>', '<blockquote class="spoiler">', '<blockquote class="author">'], [$mailquote, $mailquote, $mailquote], $s);
 			return $s;
 		}

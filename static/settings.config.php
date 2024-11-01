@@ -70,8 +70,8 @@ return [
 
 		// banner (HTML string)
 		// HTML snippet of the top navigation banner. Not supported by frio.
-		'banner' => '<a href="https://friendi.ca"><img id="logo-img" width="32" height="32" src="images/friendica.svg" alt="logo" /></a><span id="logo-text"><a href="https://friendi.ca">Friendica</a></span>',
-
+		'banner' => '<a href="https://friendi.ca"><img id="logo-img" width="215" height="65" src="images/Logotype_[ETER9]_WHITE.svg" alt="logo" /></a><span id="logo-text"><a href="https://friendi.ca">Friendica</a></span>',
+		
 		// blocked_tags (String)
 		// Comma separated list of hashtags that shouldn't be displayed in the trending tags
 		'blocked_tags' => '',

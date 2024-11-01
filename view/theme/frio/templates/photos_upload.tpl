@@ -62,7 +62,7 @@
 				<div class="modal-content">
 					<div class="modal-header" class="modal-header">
 						<button id="modal-close" type="button" class="close" data-dismiss="modal" aria-hidden="true">
-							&times;
+							<i class="fa ri-close-circle-line"></i>
 						</button>
 						<h4 id="modal-title" class="modal-title">{{$permissions}}</h4>
 					</div>

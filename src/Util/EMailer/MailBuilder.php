@@ -39,7 +39,7 @@ use Psr\Log\LoggerInterface;
 abstract class MailBuilder
 {
 	/** @var string The default email banner in case nothing else is defined */
-	const DEFAULT_EMAIL_BANNER = 'images/friendica-32.png';
+	const DEFAULT_EMAIL_BANNER = 'images/E9_32x32.png';
 
 	/** @var L10n */
 	protected $l10n;
@@ -79,9 +79,9 @@ abstract class MailBuilder
 
 		$this->headers = [
 			'Precedence'           => ['list'],
-			'X-Friendica-Host'     => [$hostname],
-			'X-Friendica-Platform' => [App::PLATFORM],
-			'X-Friendica-Version'  => [App::VERSION],
+			'X-ETER9-Host'     => [$hostname],
+			'X-ETER9-Platform' => [App::PLATFORM],
+			'X-ETER9-Version'  => [App::VERSION],
 			'List-ID'              => ['<notification.' . $hostname . '>'],
 			'List-Archive'         => ['<' . $baseUrl . '/notifications/system>'],
 		];
@@ -257,7 +257,7 @@ abstract class MailBuilder
 			// load the template for private message notifications
 			$tpl     = Renderer::getMarkupTemplate('email/html.tpl');
 			$msgHtml = Renderer::replaceMacros($tpl, [
-				'$title'       => $this->l10n->t('Friendica Notification'),
+				'$title'       => $this->l10n->t('ETER9 Notification'),
 				'$product'     => App::PLATFORM,
 				'$htmlversion' => $msgHtml,
 				'$sitename'    => $this->config->get('config', 'sitename'),

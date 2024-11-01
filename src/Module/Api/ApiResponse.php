@@ -135,7 +135,7 @@ class ApiResponse extends Response
 			'updated'      => DateTimeFormat::utcNow(DateTimeFormat::API),
 			'atom_updated' => DateTimeFormat::utcNow(DateTimeFormat::ATOM),
 			'language'     => $user_info['lang'],
-			'logo'         => $this->baseUrl . '/images/friendica-32.png',
+			'logo'         => $this->baseUrl . '/images/E9_32x32.png',
 		];
 
 		return $arr;

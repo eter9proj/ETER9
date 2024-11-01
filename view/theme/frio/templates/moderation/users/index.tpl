@@ -4,7 +4,7 @@
 <div id="admin-users" class="adminpage generic-page-wrapper">
 	<h1>{{$title}} - {{$page}} ({{$count}})</h1>
 	<p>
-		<a href="{{$base_url}}/moderation/users/create" class="btn btn-primary"><i class="fa fa-user-plus"></i> {{$h_newuser}}</a>
+		<a href="{{$base_url}}/moderation/users/create" class="btn btn-primary"><i class="fa ri-user-follow-fill"></i> {{$h_newuser}}</a>
 	</p>
 	<form action="{{$baseurl}}/{{$query_string}}" method="post">
 		<input type="hidden" name="form_security_token" value="{{$form_security_token}}">
@@ -87,9 +87,9 @@
 							" title="{{$u.account_type}}">
 						</i>
 						{{/if}}
-						{{if $u.is_admin}}<i class="fa fa-user-secret text-primary" title="{{$siteadmin}}"></i>{{/if}}
-						{{if $u.blocked}}<i class="fa fa-ban text-danger" title="{{$blocked}}"></i>{{/if}}
-						{{if $u.deleted}}<i class="fa fa-user-times" title="{{$h_deleted}}"></i>{{/if}}
+						{{if $u.is_admin}}<i class="fa ri-user-6-line-secret text-primary" title="{{$siteadmin}}"></i>{{/if}}
+						{{if $u.blocked}}<i class="fa ri-user-forbid-line text-danger" title="{{$blocked}}"></i>{{/if}}
+						{{if $u.deleted}}<i class="fa ri-user-unfollow-fill" title="{{$h_deleted}}"></i>{{/if}}
 						{{if $u.account_expired}}<i class="fa fa-clock-o text-warning" title="{{$accountexpired}}"></i>{{/if}}
 					</td>
 				{{/if}}
@@ -134,15 +134,15 @@
 				{{if $u.is_deletable}}
 					{{if $u.blocked}}
 						<a href="{{$baseurl}}/moderation/users/unblock/{{$u.uid}}?t={{$form_security_token}}" class="admin-settings-action-link" title="{{$unblock}}">
-							<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+							<i class="fa ri-check-line-circle-o" aria-hidden="true"></i>
 						</a>
 					{{else}}
 						<a href="{{$baseurl}}/moderation/users/block/{{$u.uid}}?t={{$form_security_token}}" class="admin-settings-action-link" title="{{$block}}">
-							<i class="fa fa-ban" aria-hidden="true"></i>
+							<i class="fa ri-user-forbid-line" aria-hidden="true"></i>
 						</a>
 					{{/if}}
 						<a href="{{$baseurl}}/moderation/users/delete/{{$u.uid}}?t={{$form_security_token}}" class="admin-settings-action-link" title="{{$delete}}" onclick="return confirm_delete('{{$confirm_delete}}','{{$u.name}}')">
-							<i class="fa fa-trash" aria-hidden="true"></i>
+							<i class="fa ri-delete-bin-fill" aria-hidden="true"></i>
 						</a>
 				{{else}}
 						&nbsp;
@@ -154,13 +154,13 @@
 		</table>
 		<div class="panel-footer">
 			<button type="submit" name="page_users_block" value="1" class="btn btn-warning">
-				<i class="fa fa-ban" aria-hidden="true"></i> {{$block}}
+				<i class="fa ri-user-forbid-line" aria-hidden="true"></i> {{$block}}
 			</button>
 			<button type="submit" name="page_users_unblock" value="1" class="btn btn-default">
-				<i class="fa fa-check-circle-o" aria-hidden="true"></i> {{$unblock}}
+				<i class="fa ri-check-line-circle-o" aria-hidden="true"></i> {{$unblock}}
 			</button>
 			<button type="submit" name="page_users_delete" value="1" class="btn btn-danger" onclick="return confirm_delete('{{$confirm_delete_multi}}')">
-				<i class="fa fa-trash" aria-hidden="true"></i> {{$delete}}
+				<i class="fa ri-delete-bin-fill" aria-hidden="true"></i> {{$delete}}
 			</button>
 		</div>
 		{{$pager nofilter}}

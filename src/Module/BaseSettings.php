@@ -75,14 +75,14 @@ class BaseSettings extends BaseModule
 		$tabs = [];
 
 		$tabs[] = [
-			'label'     => $this->t('Account'),
+			'label'     => $this->t('My Account'),
 			'url'       => 'settings',
 			'selected'  => static::class == Settings\Account::class ? 'active' : '',
 			'accesskey' => 'o',
 		];
 
 		$tabs[] = [
-			'label'     => $this->t('Two-factor authentication'),
+			'label'     => $this->t('Two-Factor Authentication (2FA)'),
 			'url'       => 'settings/2fa',
 			'selected'  => in_array(static::class, [
 				Settings\TwoFactor\AppSpecific::class,
@@ -107,7 +107,7 @@ class BaseSettings extends BaseModule
 
 		if (Feature::get()) {
 			$tabs[] = [
-				'label'     => $this->t('Additional features'),
+				'label'     => $this->t('Additional Features'),
 				'url'       => 'settings/features',
 				'selected'  => static::class == Settings\Features::class ? 'active' : '',
 				'accesskey' => 't',
@@ -150,28 +150,28 @@ class BaseSettings extends BaseModule
 		];
 
 		$tabs[] = [
-			'label'     => $this->t('Connected apps'),
+			'label'     => $this->t('Connected Apps'),
 			'url'       => 'settings/oauth',
 			'selected'  => static::class == Settings\OAuth::class ? 'active' : '',
 			'accesskey' => 'b',
 		];
 
 		$tabs[] = [
-			'label'     => $this->t('Remote servers'),
+			'label'     => $this->t('Remote Servers'),
 			'url'       => 'settings/server',
 			'selected'  => static::class == Settings\Server\Index::class ? 'active' : '',
 			'accesskey' => 's',
 		];
 
 		$tabs[] = [
-			'label'     => $this->t('Export personal data'),
+			'label'     => $this->t('Export Personal Data'),
 			'url'       => 'settings/userexport',
 			'selected'  => static::class == Settings\UserExport::class ? 'active' : '',
 			'accesskey' => 'e',
 		];
 
 		$tabs[] = [
-			'label'     => $this->t('Remove account'),
+			'label'     => $this->t('Remove My Account'),
 			'url'       => 'settings/removeme',
 			'selected'  => static::class === Settings\RemoveMe::class ? 'active' : '',
 			'accesskey' => 'r',

@@ -615,7 +615,7 @@ nav {
 }
 
 nav .icon {
-	color: #ccc;
+	color: #CCCCCC;
 	padding:0;
 }
 
@@ -625,7 +625,7 @@ nav a:link,
 nav a {
 	text-decoration: none;
 	outline: none;
-	color: #ccc;
+	color: #CCCCCC;
 	padding-bottom: 8px;
 	padding-top: 8px;
 	cursor: pointer;
@@ -717,7 +717,7 @@ nav .nav-menu {
 	margin: 3px 3px 0px;
 	font-size: 13px;
 	/* border-bottom: 3px solid #364A84; */
-	color: #ccc;
+	color: #CCCCCC;
 	font-weight: bold;
 }
 /*nav .nav-menu.selected a {
@@ -1107,7 +1107,7 @@ aside .vcard .account-type {
 aside select {
 	background-color: white;
 	width: 165px;
-	border-color: #ccc;
+	border-color: #CCCCCC;
 }
 
 aside .vcard dt {
@@ -1961,7 +1961,7 @@ profile-jot-form #jot-title, #profile-jot-form #jot-category {
 }
 #jot #jot-tools li a {
 	display: block;
-	color: #cccccc;
+	color: #CCCCCCccc;
 	width: 100%;
 	height: 40px;
 	text-align: center;
@@ -1978,8 +1978,8 @@ profile-jot-form #jot-title, #profile-jot-form #jot-category {
 }
 #jot #jot-tools li.perms a.unlock {
 	width: 30px;
-	border-left: 10px solid #cccccc;
-	background-color: #cccccc;
+	border-left: 10px solid #CCCCCCccc;
+	background-color: #CCCCCCccc;
 	background-position: left center;
 }
 #jot #jot-tools li.perms a.lock {
@@ -1989,8 +1989,8 @@ profile-jot-form #jot-title, #profile-jot-form #jot-category {
 }
 #jot #jot-tools li.submit {
 	float: right;
-	background-color: #cccccc;
-	border-bottom: 2px solid #cccccc;
+	background-color: #CCCCCCccc;
+	border-bottom: 2px solid #CCCCCCccc;
 	border-right: 1px solid #666666;
 	border-left: 1px solid #666666;
 }
@@ -1998,7 +1998,7 @@ profile-jot-form #jot-title, #profile-jot-form #jot-category {
 	border: 0px;
 	margin: 0px;
 	padding: 0px;
-	background-color: #cccccc;
+	background-color: #CCCCCCccc;
 	color: #666666;
 	width: 80px;
 	height: 40px;
@@ -2411,7 +2411,7 @@ aside #id_password {
 .oauthapp {
 	height: auto;
 	overflow: auto;
-	border-bottom: 2px solid #cccccc;
+	border-bottom: 2px solid #CCCCCCccc;
 	padding-bottom: 1em;
 	margin-bottom: 1em;
 }
@@ -3208,7 +3208,7 @@ img.photo-album-photo {
 	border:1px solid #511919;
 }
 #profile-edit-wrapper .toggle-section-content {
-	background:#ededed;
+	background:#F0F2F5;
 	padding:5px;
 }
 
@@ -3217,7 +3217,7 @@ img.photo-album-photo {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background-color:#ededed;
+	background-color:#F0F2F5;
 	-webkit-border-top-left-radius:0px;
 	-moz-border-radius-topleft:0px;
 	border-top-left-radius:0px;

@@ -21,7 +21,7 @@ function showHideGroupList() {
 		<h3>{{$title}}</h3>
 	</span>
 	<a class="group-new-tool pull-right widget-action faded-icon" id="sidebar-new-group" href="{{$new_group_page}}" data-toggle="tooltip" title="{{$create_new_group}}">
-			<i class="fa fa-plus" aria-hidden="true"></i>
+			<i class="fa ri-add-box-line" aria-hidden="true"></i>
 		</a>
 	</div>
 	<div id="sidebar-group-list" class="sidebar-widget-list">

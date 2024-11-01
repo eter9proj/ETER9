@@ -10,12 +10,11 @@
 require_once 'view/theme/frio/php/PHPColors/Color.php';
 
 $accentColor = new Color($scheme_accent);
-
-$nav_bg = '#' . $accentColor->darken(10);
+$nav_bg = '#E9E9E9'; // E9 White
 $menu_background_hover_color = '#' . $accentColor->darken(5);
-$nav_icon_color = "#fff";
+$nav_icon_color = "#141414"; // E9 Black
 $link_color = '#' . $accentColor->getHex();
-$background_color = "#ededed";
-$login_bg_color = "#ededed";
+$background_color = "#F0F2F5";
+$login_bg_color = "#F0F2F5";
 $contentbg_transp = 100;
 $background_image = '';

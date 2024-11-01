@@ -22,33 +22,33 @@
 			<p class="comment-edit-bb-{{$id}} comment-icon-list">
 				<span>
 					<button type="button" class="btn btn-sm template-icon bb-img" aria-label="{{$l10n.edimg}}" title="{{$l10n.edimg}}" data-role="insert-formatting" data-bbcode="img" data-id="{{$id}}" tabindex="7">
-						<i class="fa fa-picture-o"></i>
+						<i class="fa ri-image-fill"></i>
 					</button>
 					<button type="button" class="btn btn-sm template-icon bb-attach" aria-label="{{$l10n.edattach}}" title="{{$l10n.edattach}}" ondragenter="return commentLinkDrop(event, {{$id}});" ondragover="return commentLinkDrop(event, {{$id}});" ondrop="commentLinkDropper(event);" onclick="commentGetLink({{$id}}, '{{$l10n.prompttext}}');" tabindex="8">
-						<i class="fa fa-paperclip"></i>
+						<i class="fa ri-attachment-line"></i>
 					</button>
 				</span>
 				<span>
 					<button type="button" class="btn btn-sm template-icon bb-url" aria-label="{{$l10n.edurl}}" title="{{$l10n.edurl}}" onclick="insertFormatting('url',{{$id}});" tabindex="9">
-						<i class="fa fa-link"></i>
+						<i class="fa ri-links-line"></i>
 					</button>
 					<button type="button" class="btn btn-sm template-icon underline" aria-label="{{$l10n.eduline}}" title="{{$l10n.eduline}}" onclick="insertFormatting('u',{{$id}});" tabindex="10">
-						<i class="fa fa-underline"></i>
+						<i class="fa ri-underline"></i>
 					</button>
 					<button type="button" class="btn btn-sm template-icon italic" aria-label="{{$l10n.editalic}}" title="{{$l10n.editalic}}" onclick="insertFormatting('i',{{$id}});" tabindex="11">
-						<i class="fa fa-italic"></i>
+						<i class="fa ri-italic"></i>
 					</button>
 					<button type="button" class="btn btn-sm template-icon bold" aria-label="{{$l10n.edbold}}" title="{{$l10n.edbold}}" onclick="insertFormatting('b',{{$id}});" tabindex="12">
-						<i class="fa fa-bold"></i>
+						<i class="fa ri-bold"></i>
 					</button>
 					<button type="button" class="btn btn-sm template-icon quote" aria-label="{{$l10n.edquote}}" title="{{$l10n.edquote}}" onclick="insertFormatting('quote',{{$id}});" tabindex="13">
-						<i class="fa fa-quote-left"></i>
+						<i class="fa ri-double-quotes-l"></i>
 					</button>
 					<button id="button_emojipicker" type="button" class="btn btn-sm template-icon emojis" aria-label="{{$l10n.edemojis}}" title="{{$l10n.edemojis}}" tabindex="14">
-						<i class="fa fa-smile-o"></i>
+						<i class="fa ri-user-smile-line"></i>
 					</button>
 					<button type="button" class="btn btn-sm template-icon bb-url" aria-label="{{$l10n.contentwarn}}" title="{{$l10n.contentwarn}}" onclick="insertFormatting('abstract',{{$id}});" tabindex="9">
-						<i class="fa fa-eye"></i>
+						<i class="fa ri-eye-2-line"></i>
 					</button>
 				</span>
 			</p>
@@ -68,7 +68,7 @@
 						data-title-clear="{{$l10n.location_clear}}"
 						title="{{$l10n.location_set}}"
 						tabindex="6">
-						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<i class="fa ri-map-pin-2-line" aria-hidden="true"></i>
 					</button>
 				</span>
 {{/if}}
@@ -76,8 +76,8 @@
 					<img role="presentation" id="profile-rotator" src="images/rotator.gif" alt="{{$l10n.wait}}" title="{{$l10n.wait}}" style="display: none;" />
 				</span>
 				<span role="presentation" id="character-counter" class="grey text-info"></span>
-				<button type="button" class="btn btn-default" onclick="preview_comment({{$id}});" id="comment-edit-preview-link-{{$id}}" tabindex="5"><i class="fa fa-eye"></i> {{$l10n.preview}}</button>
-				<button type="submit" class="btn btn-primary" id="comment-edit-submit-{{$id}}" name="submit" tabindex="4"><i class="fa fa-envelope"></i> {{$l10n.submit}}</button>
+				<button type="button" class="btn btn-default" onclick="preview_comment({{$id}});" id="comment-edit-preview-link-{{$id}}" tabindex="5"><i class="fa ri-eye-2-line"></i> {{$l10n.preview}}</button>
+				<button type="submit" class="btn btn-primary" id="comment-edit-submit-{{$id}}" name="submit" tabindex="4"><i class="fa ri-send-plane-2-fill"></i> {{$l10n.submit}}</button>
 			</p>
 
 			<div id="comment-edit-preview-{{$id}}" class="comment-edit-preview" style="display:none;"></div>

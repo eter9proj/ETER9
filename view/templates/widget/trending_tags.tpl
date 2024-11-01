@@ -9,7 +9,7 @@
 	{{section name=ol loop=$tags max=10}}
 		<li style="margin-bottom: 5px;">
 			<a href="search?tag={{$tags[ol].term}}" style="text-decoration: none; color: inherit;">
-				<i class="fa fa-hashtag" aria-hidden="true"></i> {{$tags[ol].term}}
+				<i class="fa ri-hashtag" aria-hidden="true"></i> {{$tags[ol].term}}
 			</a>
 		</li>
 	{{/section}}
@@ -22,7 +22,7 @@
 			aria-expanded="false"
 			aria-controls="more-tags"
 			style="text-decoration: none; color: inherit; cursor: pointer; display: inline-flex; align-items: center; font-weight: bold;">
-			<i id="caret-icon" class="fa fa-caret-right" aria-hidden="true" style="margin-right: 5px;"></i>
+			<i id="caret-icon" class="fa ri-arrow-right-s-fill" aria-hidden="true" style="margin-right: 5px;"></i>
 			<span id="link-text">Show More</span>
 		</a>
 	</div>
@@ -30,7 +30,7 @@
 		{{section name=ul loop=$tags start=10}}
 			<li style="margin-bottom: 5px;">
 				<a href="search?tag={{$tags[ul].term}}" style="text-decoration: none; color: inherit;">
-					<i class="fa fa-hashtag" aria-hidden="true"></i> {{$tags[ul].term}}
+					<i class="fa ri-hashtag" aria-hidden="true"></i> {{$tags[ul].term}}
 				</a>
 			</li>
 		{{/section}}
@@ -50,12 +50,12 @@ function toggleTags(event) {
 		moreTags.style.display = 'block';
 		linkText.textContent = 'Show Less';
 		link.setAttribute('aria-expanded', 'true');
-		caretIcon.className = 'fa fa-caret-down';
+		caretIcon.className = 'fa ri-arrow-down-s-fill';
 	} else {
 		moreTags.style.display = 'none';
 		linkText.textContent = 'Show More';
 		link.setAttribute('aria-expanded', 'false');
-		caretIcon.className = 'fa fa-caret-right';
+		caretIcon.className = 'fa ri-arrow-right-s-fill';
 	}
 }
 

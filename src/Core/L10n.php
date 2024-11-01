@@ -58,7 +58,8 @@ class L10n
 		'nb-no' => 'Norsk bokmål',
 		'nl'    => 'Nederlands',
 		'pl'    => 'Polski',
-		'pt-br' => 'Português Brasileiro',
+		'pt-pt' => 'Português de Portugal',
+		'pt-br' => 'Português do Brasil',
 		'ro'    => 'Română',
 		'ru'    => 'Русский',
 		'sv'    => 'Svenska',
@@ -526,7 +527,7 @@ class L10n
 	}
 
 	/**
-	 * Creates a new L10n instance based on the given langauge
+	 * Creates a new L10n instance based on the given language
 	 *
 	 * @param string $lang The new language
 	 *

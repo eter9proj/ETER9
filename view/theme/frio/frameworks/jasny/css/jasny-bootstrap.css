@@ -309,7 +309,7 @@
 .navbar-default .navbar-offcanvas .navmenu-nav > .disabled > a:hover,
 .navmenu-default .navmenu-nav > .disabled > a:focus,
 .navbar-default .navbar-offcanvas .navmenu-nav > .disabled > a:focus {
-  color: #ccc;
+  color: #CCCCCC;
   background-color: transparent;
 }
 .navmenu-inverse,
@@ -610,10 +610,10 @@
   border-color: #ebccd1;
 }
 .form-group.has-success .fileinput .fileinput-preview {
-  color: #3c763d;
+  color: #247F00;
 }
 .form-group.has-success .fileinput .thumbnail {
-  border-color: #d6e9c6;
+  border-color: #C0FFA7;
 }
 .input-group-addon:not(:first-child) {
   border-left: 0;

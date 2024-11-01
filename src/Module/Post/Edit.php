@@ -157,6 +157,7 @@ class Edit extends BaseModule
 			'$placeholdertitle'    => $this->t('Set title'),
 			'$category'            => Post\Category::getCSVByURIId($item['uri-id'], $this->session->getLocalUserId(), Post\Category::CATEGORY),
 			'$placeholdercategory' => (Feature::isEnabled($this->session->getLocalUserId(), Feature::CATEGORIES) ? $this->t("Categories \x28comma-separated list\x29") : ''),
+			'$thinkforeternity' => $this->t('Think for Eternity'),
 			'$emtitle'             => $this->t('Example: bob@example.com, mary@example.com'),
 			'$lockstate'           => $lockstate,
 			'$acl'                 => '',

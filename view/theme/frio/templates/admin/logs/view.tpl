@@ -88,7 +88,7 @@
 	<div class="modal-dialog modal-lg" style="width:90%" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa ri-close-circle-line"></i></span></button>
 				<h4 class="modal-title">{{$l10n.Event_details}}</h4>
 			</div>
 			<div class="modal-body">

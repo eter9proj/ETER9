@@ -35,10 +35,10 @@ use Friendica\Model\Contact;
 use Friendica\Model\Item;
 use Friendica\Model\Profile;
 
-const FRIO_SCHEME_ACCENT_BLUE   = '#1e87c2';
+const FRIO_SCHEME_ACCENT_BLUE   = '#316BFF';
 const FRIO_SCHEME_ACCENT_RED    = '#b50404';
 const FRIO_SCHEME_ACCENT_PURPLE = '#a54bad';
-const FRIO_SCHEME_ACCENT_GREEN  = '#218f39';
+const FRIO_SCHEME_ACCENT_GREEN  = '#2EEFCC';
 const FRIO_SCHEME_ACCENT_PINK   = '#d900a9';
 
 const FRIO_DEFAULT_SCHEME = 'light';

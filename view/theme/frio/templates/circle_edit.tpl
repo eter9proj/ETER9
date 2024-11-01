@@ -10,7 +10,7 @@
 	{{* The buttons for editing the contact circle (edit name / remove contact circle) *}}
 	<div class="circle-actions pull-right">
 		<button type="button" id="circle-rename" class="btn btn-clear" onclick="showHide('circle-edit-wrapper'); showHide('circle-edit-header'); return false;" title="{{$edit_name}}" data-toggle="tooltip">
-			<i class="fa fa-pencil" aria-hidden="true"></i>
+			<i class="fa ri-edit-box-line" aria-hidden="true"></i>
 		</button>
 		{{if $drop}}{{$drop nofilter}}{{/if}}
 	</div>
@@ -59,10 +59,10 @@
 	{{* The buttons to switch between the different view modes *}}
 	<div id="circle-list-view-switcher" class="btn-group btn-group-sm pull-right">
 		<button type="button" id="circle-list-big" class="active circle-list-switcher btn btn-default">
-			<i class="fa fa-align-justify" aria-hidden="true"></i>
+			<i class="fa ri-align-justify" aria-hidden="true"></i>
 		</button>
 		<button type="button" id="circle-list-small" class="btn btn-default circle-list-switcher">
-			<i class="fa fa-th-large" aria-hidden="true"></i>
+			<i class="fa ri-gallery-view-2" aria-hidden="true"></i>
 		</button>
 	</div>
 	<div class="clear"></div>

@@ -127,7 +127,7 @@ $('nav').bind('nav-update', function(e,data)
 		<div class="modal-content">
 			<div id="modal-header" class="modal-header">
 				<button id="modal-close" type="button" class="close" data-dismiss="modal">
-					&times;
+					<i class="fa ri-close-circle-line"></i>
 				</button>
 				<h4 id="modal-title" class="modal-title"></h4>
 			</div>

@@ -27,7 +27,7 @@
 		var attachmentTpl = '\
 			<hr class="previewseparator">\
 			<div id="closePreview_' + id + '" title="Remove" class="closePreview" >\
-				<button type="button" class="previewActionBtn">×</button>\
+				<button type="button" class="previewActionBtn">×G</button>\
 			</div>\
 			<div id="previewImages_' + id + '" class="previewImages">\
 				<div id="previewImgBtn_' + id + '" class="previewImgBtn">\

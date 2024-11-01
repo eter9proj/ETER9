@@ -222,7 +222,7 @@ class Notify extends BaseRepository
 	function createFromArray($params)
 	{
 		/** @var string the common prefix of a notification subject */
-		$subjectPrefix = $this->l10n->t('[Friendica:Notify]');
+		$subjectPrefix = $this->l10n->t('[ETER9: Notification]');
 
 		// Temporary logging for finding the origin
 		if (!isset($params['uid'])) {
@@ -290,7 +290,7 @@ class Notify extends BaseRepository
 			case Model\Notification\Type::MAIL:
 				$itemlink = $params['link'];
 
-				$subject = $l10n->t('%s New mail received at %s', $subjectPrefix, $sitename);
+				$subject = $l10n->t('%s New message received at %s', $subjectPrefix, $sitename);
 
 				$preamble = $l10n->t('%1$s sent you a new private message at %2$s.', $params['source_name'], $sitename);
 				$epreamble = $l10n->t('%1$s sent you %2$s.', '[url='.$params['source_link'].']'.$params['source_name'].'[/url]', '[url=' . $itemlink . ']' . $l10n->t('a private message').'[/url]');
@@ -468,7 +468,7 @@ class Notify extends BaseRepository
 				switch($params['event']) {
 					case 'SYSTEM_REGISTER_REQUEST':
 						$itemlink =  $params['link'];
-						$subject = $l10n->t('[Friendica System Notify]') . ' ' . $l10n->t('registration request');
+						$subject = $l10n->t('[ETER9 Platform]') . ' ' . $l10n->t('Registration Request');
 
 						$preamble = $l10n->t('You\'ve received a registration request from \'%1$s\' at %2$s', $params['source_name'], $sitename);
 						$epreamble = $l10n->t('You\'ve received a [url=%1$s]registration request[/url] from %2$s.',
@@ -489,7 +489,7 @@ class Notify extends BaseRepository
 
 					case 'SYSTEM_REGISTER_NEW':
 						$itemlink =  $params['link'];
-						$subject = $l10n->t('[Friendica System Notify]') . ' ' . $l10n->t('new registration');
+						$subject = $l10n->t('[ETER9 Platform]') . ' ' . $l10n->t('New Registration');
 
 						$preamble = $l10n->t('You\'ve received a new registration from \'%1$s\' at %2$s', $params['source_name'], $sitename);
 						$epreamble = $l10n->t('You\'ve received a [url=%1$s]new registration[/url] from %2$s.',
@@ -547,7 +547,7 @@ class Notify extends BaseRepository
 		// Creates a new email builder for the notification email
 		$emailBuilder = $this->emailer->newNotifyMail();
 
-		$emailBuilder->setHeader('X-Friendica-Account', '<' . $nickname . '@' . $hostname . '>');
+		$emailBuilder->setHeader('X-ETER9-Account', '<' . '@' . $nickname . '@' . $hostname . '>');
 
 		$subject .= " (".$nickname."@".$hostname.")";
 
@@ -751,7 +751,7 @@ class Notify extends BaseRepository
 		$params['parent'] = $item['parent'];
 		$params['link']   = $this->baseUrl . '/display/' . urlencode($item['guid']);
 
-		$subjectPrefix = $l10n->t('[Friendica:Notify]');
+		$subjectPrefix = $l10n->t('[ETER9: Notification]');
 
 		if (Model\Post\ThreadUser::getIgnored($Notification->parentUriId, $Notification->uid)) {
 			$this->logger->info('Thread is ignored', ['parent-uri-id' => $Notification->parentUriId, 'type' => $Notification->type]);

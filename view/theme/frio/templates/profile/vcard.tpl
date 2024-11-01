@@ -5,7 +5,7 @@
 		<div class="tool visible-lg visible-md">
 			{{if $profile.edit}}
 			<div class="action">
-				<a class="" href="{{$profile.edit.0}}" title="{{$profile.edit.3}}"><i class="fa fa-pencil-square-o"></i></a>
+				<a class="" href="{{$profile.edit.0}}" title="{{$profile.edit.3}}"><i class="fa ri-edit-box-line"></i></a>
 			</div>
 			{{/if}}
 		</div>
@@ -43,12 +43,12 @@
 			<div id="dfrn-request-link-button">
 				{{if $unfollow_link}}
 				<a id="dfrn-request-link" class="btn btn-labeled btn-primary" href="{{$unfollow_link}}">
-					<span class=""><i class="fa fa-user-times"></i></span>
+					<span class=""><i class="fa ri-user-unfollow-fill"></i></span>
 					<span class="">{{$unfollow}}</span>
 				</a>
 				{{else}}
 				<a id="dfrn-request-link" class="btn btn-labeled btn-primary" href="{{$follow_link}}">
-					<span class=""><i class="fa fa-user-plus"></i></span>
+					<span class=""><i class="fa ri-user-add-fill"></i></span>
 					<span class="">{{$follow}}</span>
 				</a>
 				{{/if}}
@@ -57,7 +57,7 @@
 			{{if $subscribe_feed_link}}
 			<div id="subscribe-feed-link-button">
 				<a id="subscribe-feed-link" class="btn btn-labeled btn-primary" href="{{$subscribe_feed_link}}">
-					<span class=""><i class="fa fa-rss"></i></span>
+					<span class=""><i class="fa ri-rss-fill"></i></span>
 					<span class="">{{$subscribe_feed}}</span>
 				</a>
 			</div>
@@ -65,7 +65,7 @@
 			{{if $wallmessage_link}}
 			<div id="wallmessage-link-button">
 				<button type="button" id="wallmessage-link" class="btn btn-labeled btn-primary" onclick="openWallMessage('{{$wallmessage_link}}')">
-					<span class=""><i class="fa fa-envelope"></i></span>
+					<span class=""><i class="fa ri-send-plane-2-fill"></i></span>
 					<span class="">{{$wallmessage}}</span>
 				</button>
 			</div>
@@ -73,7 +73,7 @@
             {{if $profile.addr}}
 			<div id="mention-link-button">
 				<button type="button" id="mention-link" class="btn btn-labeled btn-primary" onclick="openWallMessage('{{$mention_url}}')">
-					<span class=""><i class="fa fa-pencil-square-o"></i></span>
+					<span class=""><i class="fa ri-at-fill"></i></span>
 					<span class="">{{$mention_label}}</span>
 				</button>
 			</div>
@@ -81,7 +81,7 @@
             {{if $network_label}}
 			<div id="showgroup-button">
 				<a id="showgroup" class="btn btn-labeled btn-primary" href="{{$network_url}}">
-					<span class=""><i class="fa fa-group"></i></span>
+					<span class=""><i class="fa ri-group-2-fill"></i></span>
 					<span class="">{{$network_label}}</span>
 				</a>
 			</div>
@@ -93,7 +93,7 @@
 
 		{{if $location}}
 		<div class="location detail">
-			<span class="location-label icon"><i class="fa fa-map-marker" title="{{$location}}"></i></span>
+			<span class="location-label icon"><i class="fa ri-map-pin-2-line" title="{{$location}}"></i></span>
 			<span class="adr">
 				{{if $profile.address}}<p class="street-address p-street-address">{{$profile.address nofilter}}</p>{{/if}}
 				{{if $profile.location}}<p class="p-location">{{$profile.location}}</p>{{/if}}
@@ -123,8 +123,8 @@
 
 		{{if $homepage}}
 		<div class="homepage detail">
-			<span class="homepage-label icon"><i class="fa fa-external-link" title="{{$homepage}}"></i></span>
-			<span class="homepage-url u-url"><a href="{{$profile.homepage}}" rel="me" target="_blank" rel="noopener noreferrer">{{include file="sub/punct_wrap.tpl" text=$profile.homepage}}</a>{{if $profile.homepage_verified}} <span title="{{$homepage_verified}}">✔</span>{{/if}}</span>
+			<span class="homepage-label icon"><i class="fa ri-external-link-line" title="{{$homepage}}"></i></span>
+			<span class="homepage-url u-url"><a href="{{$profile.homepage}}" rel="me" target="_blank" rel="noopener noreferrer">{{include file="sub/punct_wrap.tpl" text=$profile.homepage}}</a>{{if $profile.homepage_verified}} <span title="{{$homepage_verified}}"><i class="VerifiedBadge ri-verified-badge-fill"></i></span>{{/if}}</span>
 		</div>
 		{{/if}}
 

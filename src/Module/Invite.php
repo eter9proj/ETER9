@@ -149,14 +149,13 @@ class Invite extends BaseModule
 			if (Register::getPolicy() === Register::CLOSED) {
 				$linkTxt = DI::l10n()->t('Visit %s for a list of public sites that you can join. Friendica members on other sites can all connect with each other, as well as with members of many other social networks.', $dirLocation . '/servers');
 			} else {
-				$linkTxt = DI::l10n()->t('To accept this invitation, please visit and register at %s or any other public Friendica website.', DI::baseUrl() . '/register')
-					. "\r\n" . "\r\n" . DI::l10n()->t('Friendica sites all inter-connect to create a huge privacy-enhanced social web that is owned and controlled by its members. They can also connect with many traditional social networks. See %s for a list of alternate Friendica sites you can join.', $dirLocation . '/servers');
+				$linkTxt = DI::l10n()->t('To accept this invitation, please visit and register at %s or any other public Friendica website.', DI::baseUrl() . '/register');
 			}
 		} else { // there is no global directory URL defined
 			if (Register::getPolicy() === Register::CLOSED) {
 				return DI::l10n()->t('Our apologies. This system is not currently configured to connect with other public sites or invite members.');
 			} else {
-				$linkTxt = DI::l10n()->t('To accept this invitation, please visit and register at %s.', DI::baseUrl() . '/register' 
+				$linkTxt = DI::l10n()->t('To accept thisssss invitation, please sign up at %s.', DI::baseUrl() . '/register' 
 					. "\r\n" . "\r\n" . DI::l10n()->t('Friendica sites all inter-connect to create a huge privacy-enhanced social web that is owned and controlled by its members. They can also connect with many traditional social networks.'));
 			}
 		}
@@ -169,13 +168,13 @@ class Invite extends BaseModule
 			'$message'             => [
 				'message',
 				DI::l10n()->t('Your message:'),
-				DI::l10n()->t('You are cordially invited to join me and other close friends on Friendica - and help us to create a better social web.') . "\r\n" . "\r\n"
+				DI::l10n()->t('You are cordially invited to join me and other close friends on ETER9 to help us create a better social web.') . "\r\n" . "\r\n"
 				. $linkTxt
-				. "\r\n" . "\r\n" . (($inviteOnly) ? DI::l10n()->t('You will need to supply this invitation code: $invite_code') . "\r\n" . "\r\n" : '') . DI::l10n()->t('Once you have registered, please connect with me via my profile page at:')
-				. "\r\n" . "\r\n" . DI::baseUrl() . '/profile/' . DI::userSession()->getLocalUserNickname()
-				. "\r\n" . "\r\n" . DI::l10n()->t('For more information about the Friendica project and why we feel it is important, please visit http://friendi.ca') . "\r\n" . "\r\n",
+				. "\r\n" . "\r\n" . (($inviteOnly) ? DI::l10n()->t('You will need to supply this invitation code: $invite_code') . "\r\n" . "\r\n" : '') . DI::l10n()->t('Once you\'ve signed up, connect with me through my profile page:')
+				. "\r\n" . DI::baseUrl() . '/profile/' . DI::userSession()->getLocalUserNickname()
+				. "\r\n" . "\r\n" . DI::l10n()->t('For more information about the ETER9 Project and its significance, please visit https://www.eter9.com') . "\r\n" . "\r\n",
 			],
-			'$submit'              => DI::l10n()->t('Submit')
+			'$submit'              => DI::l10n()->t('Send Invitation(s)')
 		]);
 	}
 }

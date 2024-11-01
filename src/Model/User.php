@@ -1640,8 +1640,7 @@ class User
 		Login Name:		%2$s
 		Password:		%3$s
 
-		You may change your password from your account "Settings" page after logging
-		in.
+		You may change your password from your account "Settings" page after logging in.
 
 		Please take a few moments to review the other account settings on that page.
 
@@ -1687,12 +1686,13 @@ class User
 		$body = Strings::deindent(DI::l10n()->t(
 			'
 			Dear %1$s,
-				Thank you for registering at %2$s. Your account is pending for approval by the administrator.
+			
+			Thank you for registering with %2$s. Your account is currently awaiting approval from the administrator.
 
-			Your login details are as follows:
+			Here are your login details:
 
-			Site Location:	%3$s
-			Login Name:		%4$s
+			E9 Platform:	%3$s
+			Username:		%4$s
 			Password:		%5$s
 		',
 			$user['username'],
@@ -1730,7 +1730,8 @@ class User
 		$preamble = Strings::deindent($l10n->t(
 			'
 				Dear %1$s,
-				Thank you for registering at %2$s. Your account has been created.
+				
+				Thank you for registering with %2$s. Your account has been created.
 			',
 			$user['username'],
 			$sitename
@@ -1739,12 +1740,11 @@ class User
 			'
 			The login details are as follows:
 
-			Site Location:	%3$s
-			Login Name:		%1$s
+			E9 Platform:	%3$s
+			Username:		%1$s
 			Password:		%5$s
 
-			You may change your password from your account "Settings" page after logging
-			in.
+			You may change your password from your account "Settings" page after logging in.
 
 			Please take a few moments to review the other account settings on that page.
 
@@ -1756,8 +1756,7 @@ class User
 			to be more specific than that.
 
 			We fully respect your right to privacy, and none of these items are necessary.
-			If you are new and do not know anybody here, they may help
-			you to make some new and interesting friends.
+			If you are new and do not know anybody here, they may help you to make some new and interesting friends.
 
 			If you ever want to delete your account, you can do so at %3$s/settings/removeme
 
@@ -1771,7 +1770,7 @@ class User
 
 		$email = DI::emailer()
 			->newSystemMail()
-			->withMessage(DI::l10n()->t('Registration details for %s', $sitename), $preamble, $body)
+			->withMessage(DI::l10n()->t('Your ETER9 Account Registration'), $preamble, $body)
 			->forUser($user)
 			->withRecipient($user['email'])
 			->build();

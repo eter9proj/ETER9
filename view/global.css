@@ -11,7 +11,7 @@ details > summary {
   -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
   -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
   box-shadow: inset 0px 1px 0px 0px #ffffff;
-  background-color: #ededed;
+  background-color: #F0F2F5;
   text-indent: 0;
   border: 1px solid #dcdcdc;
   display: inline-block;
@@ -556,13 +556,13 @@ td.pendingnote > p > span {
 .warning-message {
   padding: 10px;
   margin: 5px;
-  border-left: 5px solid #f00;
+  border-left: 5px solid #FF316B;
   font-weight: bold;
 }
 
 /* src/href attributes filter error display */
-.invalid-src { border: 1px dotted red;}
-.invalid-href { border-bottom: 1px dotted red;}
+.invalid-src { border: 1px dotted #FF316B;}
+.invalid-href { border-bottom: 1px dotted #FF316B;}
 .invalid-src:after,
 .invalid-href:after { content: '⚠️'}
 img.invalid-src:after { vertical-align: top;}
@@ -625,13 +625,13 @@ span.emoji.mastodon img {
 }
 
 /* Exception page */
-
 #exception {
   overflow: hidden;
-  background-image: url('../images/friendica-404_svg_hare-bottom-light-inside.png');
-  background-position: 50px bottom;
+  background-image: url('../images/ogotype.svg');
+  background-position: 16px calc(100% - 40px); /* Adjust the value of 40px as needed */
   background-repeat: no-repeat;
 }
+
 
 #exception .hare {
   float: right;
@@ -751,7 +751,7 @@ figure.img-allocated-height img{
 }
 
 /**
- * Log levels colorized in the admin panel
+ * Log levels colorized in the Admin panel
  **/
 .loglevel-debug {
 }
@@ -766,7 +766,7 @@ figure.img-allocated-height img{
 	font-weight: bold;
 }
 .loglevel-error {
-	color: #ff0000; /* red */
+	color: #FF316B; /* Red */
 	font-weight: bold;
 }
 .loglevel-critical {
@@ -774,7 +774,7 @@ figure.img-allocated-height img{
 	font-weight: bold;
 }
 .loglevel-alert {
-	color: #ff0000; /* red */
+	color: #FF316B; /* Red */
 	font-weight: bold;
 	font-style: italic;
 }

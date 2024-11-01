@@ -34,18 +34,25 @@ $scheme_modified = 0;
  * This script can be included when the maintenance mode is on, which requires us to avoid any config call and
  * use the following hardcoded defaults
  */
-$scheme           = FRIO_DEFAULT_SCHEME;
+
+//$scheme           = FRIO_DEFAULT_SCHEME;
+$scheme           = null;
 $scheme_accent    = FRIO_SCHEME_ACCENT_BLUE;
-$nav_bg           = '#708fa0';
-$nav_icon_color   = '#ffffff';
-$link_color       = '#6fdbe8';
-$background_color = '#ededed';
+$nav_bg           = '#F8F8F8'; // Guyabano
+$nav_icon_color   = '#141414'; // E9 Black
+$link_color       = '#316BFF'; // E9 Main Color
+$background_color = '#f2f5f7';
 $contentbg_transp = 100;
 $background_image = 'img/none.png';
 $bg_image_option  = '';
-$login_bg_image   = '';
+//$login_bg_image   = 'img/landscape-009.png';
+$login_bg_image   = 'img/landscape-003.jpg';
 $login_bg_color   = '';
 $modified         = time();
+
+
+
+
 
 if (DI::mode()->has(\Friendica\App\Mode::MAINTENANCEDISABLED)) {
 	DI::config()->reload();
@@ -86,7 +93,7 @@ if (DI::mode()->has(\Friendica\App\Mode::MAINTENANCEDISABLED)) {
 if (!$login_bg_image && !$login_bg_color) {
 	$login_bg_image = 'img/login_bg.jpg';
 }
-$login_bg_color = $login_bg_color ?: '#ededed';
+$login_bg_color = $login_bg_color ?: '#f2f5f7';
 
 $scheme = Strings::sanitizeFilePathItem($scheme);
 
@@ -185,10 +192,10 @@ $options = [
 	'$background_repeat'           => $background_repeat,
 	'$login_bg_image'              => $login_bg_image,
 	'$login_bg_color'              => $login_bg_color,
-	'$font_color_darker'           => $font_color_darker ?? '#222',
+	'$font_color_darker'           => $font_color_darker ?? '#141414',
 	'$font_color_lighter'          => $font_color_lighter ?? '#aaa',
-	'$font_color'                  => $font_color ?? '#444',
-];
+	'$font_color'                  => $font_color ?? '#141414',
+]; // E9 Black: #141414
 
 $css_tpl = file_get_contents('view/theme/frio/css/style.css');
 $css_tpl .= file_get_contents('view/theme/frio/css/dropzone.min.frio.css');

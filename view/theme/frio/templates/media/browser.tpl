@@ -4,7 +4,7 @@
 <div id="filebrowser" class="fbrowser {{$type}}" data-nickname="{{$nickname}}" data-type="{{$type}}">
 	<div class="fbrowser-content">
 		<div class="error hidden">
-			<span></span> <button type="button" class="btn btn-link close" aria-label="Close">X</button>
+			<span></span> <button type="button" class="btn btn-link close" aria-label="Close"><i class="fa ri-close-circle-line"></i></button>
 		</div>
 
 		{{* The breadcrumb navigation *}}
@@ -17,7 +17,7 @@
 
 			{{* Switch between image and file mode *}}
 			<div class="fbswitcher btn-group btn-group-xs pull-right" aria-label="Switch between photo and attachment mode">
-				<button type="button" class="btn btn-default" data-mode="photo" aria-label="Photo Mode"><i class="fa fa-picture-o" aria-hidden="true"></i></button>
+				<button type="button" class="btn btn-default" data-mode="photo" aria-label="Photo Mode"><i class="fa ri-image-fill" aria-hidden="true"></i></button>
 				<button type="button" class="btn btn-default" data-mode="attachment" aria-label="Attachment Mode"><i class="fa fa-file-o" aria-hidden="true"></i></button>
 			</div>
 		</ol>

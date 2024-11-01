@@ -20,25 +20,25 @@
 	{{if $tools.edit}}
 		<span class="icon-padding"> </span>
 		<a id="photo-edit-link" href="{{$tools.edit.0}}" title="{{$tools.edit.1}}" data-toggle="tooltip">
-			<i class="page-action faded-icon fa fa-pencil"></i>
+			<i class="page-action faded-icon fa ri-edit-box-line"></i>
 		</a>
 	{{/if}}
 	{{if $tools.delete}}
 		<span class="icon-padding"> </span>
 		<a id="photo-edit-link" href="{{$tools.delete.0}}" title="{{$tools.delete.1}}" data-toggle="tooltip">
-			<i class="page-action faded-icon fa fa-trash"></i>
+			<i class="page-action faded-icon fa ri-delete-bin-fill"></i>
 		</a>
 	{{/if}}
 	{{if $tools.profile}}
 		<span class="icon-padding"> </span>
 		<a id="photo-toprofile-link" href="{{$tools.profile.0}}" title="{{$tools.profile.1}}" data-toggle="tooltip">
-			<i class="page-action faded-icon fa fa-user"></i>
+			<i class="page-action faded-icon fa ri-user-6-line"></i>
 		</a>
 	{{/if}}
 	{{if $tools.lock}}
 		<span class="icon-padding"> </span>
 		<a id="photo-lock-link" onclick="lockview(event, 'photo', {{$id}});" title="{{$tools.lock}}" data-toggle="tooltip">
-			<i class="page-action faded-icon fa fa-lock"></i>
+			<i class="page-action faded-icon fa ri-git-repository-private-line"></i>
 		</a>
 	{{/if}}
 {{/if}}

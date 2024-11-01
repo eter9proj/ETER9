@@ -47,22 +47,22 @@
 			<div class="btn-group contact-actions pull-right nav-pills preferences hidden-xs" role="group">
 				{{if $contact.photo_menu.pm}}
 				<button type="button" class="contact-action-link btn btn-default" onclick="addToModal('{{$contact.photo_menu.pm.1}}'); return false;" data-toggle="tooltip" title="{{$contact.photo_menu.pm.0}}">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<i class="fa ri-send-plane-2-fill" aria-hidden="true"></i>
 				</button>
 				{{/if}}
 				{{if $contact.photo_menu.network}}
 				<a class="contact-action-link btn btn-default" href="{{$contact.photo_menu.network.1}}" data-toggle="tooltip" title="{{$contact.photo_menu.network.0}}">
-					<i class="fa fa-cloud" aria-hidden="true"></i>
+					<i class="fa ri-cloud-fill" aria-hidden="true"></i>
 				</a>
 				{{/if}}
 				{{if $contact.photo_menu.follow}}
 				<a class="contact-action-link btn btn-default" href="{{$contact.photo_menu.follow.1}}" data-toggle="tooltip" title="{{$contact.photo_menu.follow.0}}">
-					<i class="fa fa-user-plus" aria-hidden="true"></i>
+					<i class="fa ri-user-follow-fill" aria-hidden="true"></i>
 				</a>
 				{{/if}}
 				{{if $contact.photo_menu.unfollow}}
 				<a class="contact-action-link btn btn-default" href="{{$contact.photo_menu.unfollow.1}}" data-toggle="tooltip" title="{{$contact.photo_menu.unfollow.0}}">
-					<i class="fa fa-user-times" aria-hidden="true"></i>
+					<i class="fa ri-user-unfollow-fill" aria-hidden="true"></i>
 				</a>
 				{{/if}}
 				{{if $contact.photo_menu.hide}}
@@ -78,9 +78,9 @@
 			<div class="contact-group-actions pull-right nav-pills preferences">
 				<button type="button" class="contact-action-link btn contact-group-link btn-default contact-circle-actions contact-circle-link" onclick="circleChangeMember({{$contact.change_member.gid}},{{$contact.change_member.cid}},'{{$contact.change_member.sec_token}}'); return true;" data-toggle="tooltip" title="{{$contact.change_member.title}}">
 					{{if $contact.label == "members"}}
-					<i class="fa fa-times-circle" aria-hidden="true"></i>
+					<i class="fa ri-close-circle-fill" aria-hidden="true"></i>
 					{{elseif $contact.label == "contacts"}}
-					<i class="fa fa-plus-circle" aria-hidden="true"></i>
+					<i class="fa ri-add-box-line-circle" aria-hidden="true"></i>
 					{{/if}}
 				</button>
 			</div>
@@ -91,7 +91,7 @@
 				<div class="contact-entry-name" id="contact-entry-name-{{$contact.id}}">
 					<h4 class="media-heading"><a href="{{if !empty($contact.photo_menu.edit)}}{{$contact.photo_menu.edit.1}}{{else}}{{$contact.url}}{{/if}}">{{$contact.name}}</a>
 					{{if $contact.account_type}} <small class="contact-entry-details" id="contact-entry-accounttype-{{$contact.id}}">({{$contact.account_type}})</small>{{/if}}
-					{{if $contact.account_type == 'Group'}}<i class="fa fa-comments-o" aria-hidden="true"></i>{{/if}}
+					{{if $contact.account_type == 'Group'}}<i class="fa ri-bubble-chart-line" aria-hidden="true"></i>{{/if}}
 					{{* @todo this needs some changing in core because $contact.account_type contains a translated string which may not be the same in every language *}}
 					</h4>
 				</div>

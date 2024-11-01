@@ -6,20 +6,20 @@
 	<div class="photo-album-actions pull-right">
 		{{if $can_post}}
 		<a class="photos-upload-link page-action faded-icon" href="{{$upload.1}}" title="{{$upload.0}}" data-toggle="tooltip">
-			<i class="fa fa-plus"></i>
+			<i class="fa ri-add-box-line"></i>
 		</a>
 		{{/if}}
 
 		{{if $edit}}
 		<span class="icon-padding"> </span>
 		<button id="album-edit-link" class="btn-link page-action faded-icon" type="button" data-modal-url="{{$edit.1}}" title="{{$edit.0}}" data-toggle="tooltip">
-			<i class="fa fa-pencil"></i>
+			<i class="fa ri-edit-box-line"></i>
 		</button>
 		{{/if}}
 		{{if $drop}}
 		<span class="icon-padding"> </span>
 		<button id="album-drop-link" class="btn-link page-action faded-icon" type="button" data-modal-url="{{$drop.1}}" title="{{$drop.0}}" data-toggle="tooltip">
-			<i class="fa fa-trash"></i>
+			<i class="fa ri-delete-bin-fill"></i>
 		</button>
 		{{/if}}
 

@@ -38,9 +38,9 @@
 					</td>
 					<th>{{$gserver.site_name|default:$gserver.domain}}</th>
 					<td>
-						<a href="{{$gserver.url}}" target="_blank" rel="noreferrer noopener">{{$gserver.domain}} <i class="fa fa-external-link"></i></a>
+						<a href="{{$gserver.url}}" target="_blank" rel="noreferrer noopener">{{$gserver.domain}} <i class="fa ri-external-link-line"></i></a>
 					</td>
-					<td class="text-right">{{$gserver.contacts}} <i class="fa fa-user"></i></td>
+					<td class="text-right">{{$gserver.contacts}} <i class="fa ri-user-6-line"></i></td>
 				</tr>
             {{/foreach}}
 			</tbody>

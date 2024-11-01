@@ -6,7 +6,7 @@
 	{{if $new_event.0}}
 	<div class="pull-right" id="new-event-link">
 		<button type="button" class="btn-link page-action faded-icon" onclick="addToModal('{{$new_event.0}}')" title="{{$new_event.1}}" data-toggle="tooltip">
-			<i class="fa fa-plus"></i>
+			<i class="fa ri-add-box-line"></i>
 		</button>
 	</div>
 	{{/if}}

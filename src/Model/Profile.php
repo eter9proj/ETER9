@@ -456,7 +456,7 @@ class Profile
 			$mention_url   = 'compose/0?body=!' . $profile['addr'];
 			$network_label = DI::l10n()->t('View group');
 		} else {
-			$mention_label = DI::l10n()->t('Mention');
+			$mention_label = DI::l10n()->t('»');
 			$mention_url   = 'compose/0?body=@' . $profile['addr'];
 			$network_label = DI::l10n()->t('Network Posts');
 		}

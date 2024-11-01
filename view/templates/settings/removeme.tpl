@@ -10,7 +10,7 @@
             {{include file="field_password.tpl" field=$password}}
 
 			<div class="form-group pull-right settings-submit-wrapper">
-				<button type="submit" name="submit" class="btn btn-primary" value="{{$l10n.title}}"><i class="fa fa-trash fa-fw"></i>&nbsp;{{$l10n.title}}</button>
+				<button type="submit" name="submit" class="btn btn-danger" value="{{$l10n.title}}"><i class="fa ri-delete-bin-fill fa-fw"></i>&nbsp;{{$l10n.title}}</button>
 			</div>
 			<div class="clear"></div>
 		</form>

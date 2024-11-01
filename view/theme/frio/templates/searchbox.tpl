@@ -48,7 +48,7 @@ Some parts of this template will be moved by js to other places (see theme.js) -
 {{if $s}}
 	<a href="search/saved/add?term={{$q}}&amp;return_url={{$return_url}}" class="btn btn-sm btn-primary pull-right" id="search-save" title="{{$save_label}}" aria-label="{{$save_label}}" value="{{$save_label}}" data-toggle="tooltip">
 	{{if $mode == "tag"}}
-		<i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+		<i class="fa ri-add-box-line fa-2x" aria-hidden="true"></i>
 	{{else}}
 		<i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i>
 	{{/if}}

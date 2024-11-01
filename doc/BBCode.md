@@ -65,12 +65,12 @@ table.bbcodes > * > tr > th {
   <td><a href="http://friendi.ca" target="external-link">Friendica</a></td>
 </tr>
 <tr>
-  <td>[img]https://raw.githubusercontent.com/friendica/friendica/stable/images/friendica-32.png[/img]</td>
-  <td><img src="https://raw.githubusercontent.com/friendica/friendica/stable/images/friendica-32.png"></td>
+  <td>[img]https://raw.githubusercontent.com/friendica/friendica/stable/images/E9_32x32.png[/img]</td>
+  <td><img src="https://raw.githubusercontent.com/friendica/friendica/stable/images/E9_32x32.png"></td>
 </tr>
 <tr>
-  <td>[img=https://raw.githubusercontent.com/friendica/friendica/stable/images/friendica-32.png]The Friendica Logo[/img]</td>
-  <td><img src="https://raw.githubusercontent.com/friendica/friendica/stable/images/friendica-32.png" alt="The Friendica Logo"></td>
+  <td>[img=https://raw.githubusercontent.com/friendica/friendica/stable/images/E9_32x32.png]The Friendica Logo[/img]</td>
+  <td><img src="https://raw.githubusercontent.com/friendica/friendica/stable/images/E9_32x32.png" alt="The Friendica Logo"></td>
 </tr>
 <tr>
   <td>[img=64x32]https://raw.githubusercontent.com/friendica/friendica/stable/images/friendica.svg[/img]<br>

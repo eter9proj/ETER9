@@ -1161,7 +1161,7 @@ ul .sidebar-circle-li .icon {
 #profile-jot-text-loading,
 #profile-jot-text {
 	height: 20px;
-	color: #cccccc;
+	color: #CCCCCCccc;
 }
 
 #profile-jot-text_tbl {
@@ -1183,7 +1183,7 @@ ul .sidebar-circle-li .icon {
 	height: 20px;
 	width: 575px;
 	font-weight: bold;
-	border: 1px solid #cccccc;
+	border: 1px solid #CCCCCCccc;
 }
 
 #jot-perms-icon {
@@ -1204,7 +1204,7 @@ ul .sidebar-circle-li .icon {
 #jot-title:focus,
 #jot-category:hover,
 #jot-category:focus {
-	border: 1px solid #cccccc;
+	border: 1px solid #CCCCCCccc;
 }
 
 .preview {
@@ -1335,7 +1335,7 @@ ul .sidebar-circle-li .icon {
 
 #profile-jot-email-label {
 	background-color: #555753;
-	color: #ccccce;
+	color: #CCCCCCcce;
 	padding: 5px;
 }
 
@@ -1381,7 +1381,7 @@ ul .sidebar-circle-li .icon {
 
 #acl-permit-text {
 	background-color: #555753;
-	color: #ccccce;
+	color: #CCCCCCcce;
 	padding: 5px; float: left;
 }
 
@@ -1394,7 +1394,7 @@ ul .sidebar-circle-li .icon {
 
 #acl-deny-text {
 	background-color: #555753;
-	color: #ccccce;
+	color: #CCCCCCcce;
 	padding: 5px;
 	float: left;
 }
@@ -2006,7 +2006,7 @@ pre code {
 	font-family: Courier, monospace;
 	display: block;
 	overflow: auto;
-	border: 1px solid #cccccc;
+	border: 1px solid #CCCCCCccc;
 	border-width: 1px 1px 1px 3px;
 	padding-left: 5px;
 	margin-top: 10px;
@@ -3425,7 +3425,7 @@ margin-left: 0px;
 	border: none;
 	background-color: #f0edf0;
 	color: #555753;
-	border: 1px solid #ccc;
+	border: 1px solid #CCCCCC;
 	margin-bottom: 10px;
 	padding: 10px;
 }
@@ -3435,7 +3435,7 @@ margin-left: 0px;
 	width: 83%;
 	height: 200px;
 	overflow: auto;
-	border: 1px solid #ccc;
+	border: 1px solid #CCCCCC;
 	background-color: #f0edf0;
 	padding: 10px;
 }

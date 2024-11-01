@@ -5,7 +5,9 @@
 <meta name="generator" content="{{$generator}}" />
 <meta name="viewport" content="initial-scale=1.0">
 
-{{* All needed css files - Note: css must be inserted before js files *}}
+{{* All needed CSS files - NOTE: CSS must be inserted before JS files *}}
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
 <link rel="stylesheet" href="view/global.css?v={{$VERSION}}" type="text/css" media="all" />
 <link rel="stylesheet" href="view/asset/jquery-colorbox/example5/colorbox.css?v={{$VERSION}}"
 	type="text/css" media="screen" />
@@ -52,7 +54,7 @@
 <link rel="stylesheet" href="view/js/fancybox/jquery.fancybox.min.css?v={{$VERSION}}"
 	type="text/css" media="screen" />
 
-{{* own css files *}}
+{{* Own CSS files *}}
 <link rel="stylesheet" href="view/theme/frio/css/hovercard.css?v={{$VERSION}}" type="text/css"
 	media="screen" />
 <link rel="stylesheet" href="view/theme/frio/css/font-awesome.custom.css?v={{$VERSION}}"
@@ -62,11 +64,15 @@
 	<link rel="stylesheet" href="{{$stylesheetUrl}}" type="text/css" media="{{$media}}" />
 {{/foreach}}
 
-<link rel="icon" href="{{$shortcut_icon}}" />
-<link rel="apple-touch-icon" href="{{$touch_icon}}" />
+{{* Boxicons CSS *}}
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+
+<link rel="icon" href="/images/favicon.svg" />
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
 
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <link rel="manifest" href="{{$baseurl}}/friendica.webmanifest">
+
 
 <script type="text/javascript">
 	// @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
@@ -77,9 +83,57 @@
 
 	<link rel="search" href="{{$baseurl}}/opensearch" type="application/opensearchdescription+xml"
 		title="Search in Friendica" />
+		
+		
+		
+	
+	
+	<!-- IBM Plex Mono -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+	<!-- M PLUS 1 Code -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
+	<!-- Play -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Anta -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+	<!-- Titillium Web -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+	<!-- Roboto Mono -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+	<!-- Ubuntu Mono -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<!-- Red Hat Mono -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+	
+	
+	
+		
+		
+		
+		
+		
+		
+	
 
 
-	{{* The js files we use *}}
+	{{* The JS files we use *}}
 	<!--[if IE]>
 <script type="text/javascript" src="https://html5shiv.googlecode.com/svn/trunk/html5.js?v={{$VERSION}}"></script>
 <![endif]-->
@@ -136,7 +190,7 @@
 	<script type="text/javascript"
 		src="view/theme/frio/frameworks/sticky-kit/jquery.sticky-kit.min.js?v={{$VERSION}}"></script>
 
-	{{* own js files *}}
+	{{* Own JS files *}}
 	<script type="text/javascript" src="view/theme/frio/js/theme.js?v={{$VERSION}}"></script>
 	<script type="text/javascript" src="view/theme/frio/js/modal.js?v={{$VERSION}}"></script>
 	{{if ! $block_public}}

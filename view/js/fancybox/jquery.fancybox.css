@@ -84,7 +84,7 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-infobar {
-    color: #ccc;
+    color: #CCCCCC;
     font-size: 13px;
     -webkit-font-smoothing: subpixel-antialiased;
     height: 44px;
@@ -326,7 +326,7 @@ body.compensate-for-scrollbar {
 .fancybox-button,
 .fancybox-button:visited,
 .fancybox-button:link {
-    color: #ccc;
+    color: #CCCCCC;
 }
 
 .fancybox-button:hover {
@@ -398,7 +398,7 @@ body.compensate-for-scrollbar {
     background: transparent;
     border: 0;
     border-radius: 0;
-    color: #ccc;
+    color: #CCCCCC;
     cursor: pointer;
     opacity: .8;
     padding: 8px;
@@ -499,7 +499,7 @@ body.compensate-for-scrollbar {
 .fancybox-caption a,
 .fancybox-caption a:link,
 .fancybox-caption a:visited {
-    color: #ccc;
+    color: #CCCCCC;
     text-decoration: none;
 }
 

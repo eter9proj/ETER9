@@ -74,6 +74,7 @@ class Protocol
 	const ZOT       = 'zot!';    // Zot!
 
 	const PHANTOM   = 'unkn';    // Place holder
+	// const PHANTOM   = 'eter';    // Place holder ETER9
 
 	/**
 	 * Returns whether the provided protocol supports following

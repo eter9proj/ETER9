@@ -7545,7 +7545,7 @@ const EmojiPicker = function(options) {
                         font-family: sans-serif;
                         font-weight: bold;
                         flex: 0 0 calc(100% - 20px);
-                        border-bottom: 1px solid #ededed;
+                        border-bottom: 1px solid #F0F2F5;
                     }
 
                     .fg-emoji-nav {

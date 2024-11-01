@@ -16,7 +16,7 @@
 				<th><span title="{{$l10n.ignored_title}}">{{$l10n.ignored}} <i class="fa fa-question-circle icon-question-sign"></i></span></th>
 				<th>
 					<span title="{{$l10n.delete_title}}">
-						<i class="fa fa-trash icon-trash" aria-hidden="true" title="{{$l10n.delete}}"></i>
+						<i class="fa ri-delete-bin-fill icon-trash" aria-hidden="true" title="{{$l10n.delete}}"></i>
 						<span class="sr-only">{{$l10n.delete}}</span>
 						<i class="fa fa-question-circle icon-question-sign"></i>
 					</span>
@@ -26,7 +26,7 @@
 {{foreach $servers as $index => $server}}
 			<tr>
 				<td>
-					<a href="{{$server->gserver->url}}">{{($server->gserver->siteName) ? $server->gserver->siteName : $server->gserver->url}} <i class="fa fa-external-link"></i></a>
+					<a href="{{$server->gserver->url}}">{{($server->gserver->siteName) ? $server->gserver->siteName : $server->gserver->url}} <i class="fa ri-external-link-line"></i></a>
 				</td>
 				<td>
 	                {{include file="field_checkbox.tpl" field=$ignoredCheckboxes[$index]}}

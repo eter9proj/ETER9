@@ -63,9 +63,9 @@ use Psr\Log\LoggerInterface;
  */
 class App
 {
-	const PLATFORM = 'Friendica';
-	const CODENAME = 'Yellow Archangel';
-	const VERSION  = '2024.08';
+	const PLATFORM = 'ETER9';
+	const CODENAME = 'EDGE';
+	const VERSION  = '3.6.9-edge';
 
 	// Allow themes to control internal parameters
 	// by changing App values in theme.php

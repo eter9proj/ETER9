@@ -12,7 +12,7 @@
 
 			<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenuTools-{{$id}}">
 				<li role="menuitem">
-					<a onclick="dropItem('item/drop/{{$id}}', '#wall-item-outside-wrapper-{{$id}}'); return false;" class="delete" title="{{$drop.delete}}"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;{{$drop.delete}}</a>
+					<a onclick="dropItem('item/drop/{{$id}}', '#wall-item-outside-wrapper-{{$id}}'); return false;" class="delete" title="{{$drop.delete}}"><i class="fa ri-delete-bin-fill" aria-hidden="true"></i>&nbsp;{{$drop.delete}}</a>
 				</li>
 			</ul>
 		</li>

@@ -365,7 +365,7 @@ div.wall-item-content-wrapper.shiny {
 #jot-title:focus,
 #jot-category:hover,
 #jot-category:focus {
-	border: 1px solid #cccccc;
+	border: 1px solid #CCCCCCccc;
 }
 
 .jothidden { display:none; }
@@ -1305,7 +1305,7 @@ input#dfrn-url {
 	margin-top: 10px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	border: 1px solid #cccccc;
+	border: 1px solid #CCCCCCccc;
 	padding: 3px 1px 1px 3px;
 }
 .comment-edit-text-end {
@@ -1646,8 +1646,8 @@ input#dfrn-url {
 #profile-jot-text {
 	height: 20px;
 	width: 100%;
-	color:#cccccc;
-	border: 1px solid #cccccc;
+	color:#CCCCCCccc;
+	border: 1px solid #CCCCCCccc;
 	padding: 3px 0px 0px 5px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -2798,7 +2798,7 @@ aside input[type='text'] {
 }
 
 #adminpage h3 {
-	border-bottom: 1px solid #cccccc;
+	border-bottom: 1px solid #CCCCCCccc;
 }
 #adminpage .field label {
 	font-weight: bold;
@@ -2859,7 +2859,7 @@ aside input[type='text'] {
 .popup .panel .panel_text { display: block; overflow: auto; height: 80%; }
 .popup .panel .panel_in { width: 100%; height: 100%;	position: relative; }
 .popup .panel .panel_actions {  width: 100%; bottom: 4px; left: 0px; position: absolute; }
-.panel_text .progress { width: 50%; overflow: hidden; height: auto; border: 1px solid #cccccc; margin-bottom: 5px}
+.panel_text .progress { width: 50%; overflow: hidden; height: auto; border: 1px solid #CCCCCCccc; margin-bottom: 5px}
 .panel_text .progress span {float: right; display: block; width: 25%; background-color: #eeeeee; text-align: right;}
 
 /**
@@ -2867,7 +2867,7 @@ aside input[type='text'] {
  */
 .oauthapp {
 	height: auto; overflow: auto;
-	border-bottom: 2px solid #cccccc;
+	border-bottom: 2px solid #CCCCCCccc;
 	padding-bottom: 1em;
 	margin-bottom: 1em;
 }
@@ -2971,7 +2971,7 @@ aside input[type='text'] {
     text-decoration: none;
 }
 .editicon:hover {
-	background-color: #ccc;
+	background-color: #CCCCCC;
 }
 .boldbb {
 	background-position: 0px 0px;
@@ -3045,14 +3045,14 @@ aside input[type='text'] {
 	background-color:#ffffff;
 	overflow:auto;
 	z-index:100000;
-	border:1px solid #cccccc;
+	border:1px solid #CCCCCCccc;
 }
 .acpopup-mce {
 	max-height:150px;
 	background-color:#ffffff;
 	overflow:auto;
 	z-index:100000;
-	border:1px solid #cccccc;
+	border:1px solid #CCCCCCccc;
 }
 .acpopupitem {
 	background-color:#ffffff; padding: 4px;

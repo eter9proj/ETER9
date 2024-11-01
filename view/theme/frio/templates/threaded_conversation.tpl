@@ -18,7 +18,7 @@
 
 {{if $dropping}}
 <button type="button" id="item-delete-selected" class="btn btn-link" title="{{$dropping}}" onclick="deleteCheckedItems();" data-toggle="tooltip">
-	<i class="fa fa-trash" aria-hidden="true"></i>
+	<i class="fa ri-delete-bin-5-fill" aria-hidden="true"></i>
 </button>
 {{/if}}
 {{/if}}

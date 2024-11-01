@@ -37,13 +37,13 @@
 			<div id="dfrn-request-link-button">
 				{{if $follow_link}}
 					<a id="dfrn-request-link" class="btn btn-labeled btn-primary" href="{{$follow_link}}"">
-						<span class=""><i class="fa fa-user-plus"></i></span>
+						<span class=""><i class="fa ri-user-follow-fill"></i></span>
 						<span class="">{{$follow}}</span>
 					</a>
 				{{/if}}
 				{{if $unfollow_link}}
 					<a id="dfrn-request-link" class="btn btn-labeled btn-primary" href="{{$unfollow_link}}">
-						<span class=""><i class="fa fa-user-times"></i></span>
+						<span class=""><i class="fa ri-user-unfollow-fill"></i></span>
 						<span class="">{{$unfollow}}</span>
 					</a>
 				{{/if}}
@@ -51,7 +51,7 @@
 			{{if $wallmessage_link}}
 				<div id="wallmessage-link-button">
 					<button type="button" id="wallmessage-link" class="btn btn-labeled btn-primary" onclick="openWallMessage('{{$wallmessage_link}}')">
-						<span class=""><i class="fa fa-envelope"></i></span>
+						<span class=""><i class="fa ri-send-plane-2-fill"></i></span>
 						<span class="">{{$wallmessage}}</span>
 					</button>
 				</div>
@@ -59,7 +59,7 @@
 			{{if $mention_link}}
 				<div id="mention-link-button">
 					<button type="button" id="mention-link" class="btn btn-labeled btn-primary{{if !$always_open_compose}} modal-open{{/if}}" onclick="openWallMessage('{{$mention_link}}')" title="{{$mention}}" aria-label="{{$mention}}">
-						<span class=""><i class="fa fa-pencil-square-o"></i></span>
+						<span class=""><i class="fa ri-edit-box-line"></i></span>
 						<span class="">{{$mention}}</span>
 					</button>
 				</div>
@@ -67,7 +67,7 @@
 			{{if $showgroup_link}}
 				<div id="show-group-button">
 					<a type="button" id="show-group" class="btn btn-labeled btn-primary" href="{{$showgroup_link}}" title="{{$showgroup}}" aria-label="{{$showgroup}}">
-						<span class=""><i class="fa fa-group"></i></span>
+						<span class=""><i class="fa ri-group-2-fill"></i></span>
 						<span class="">{{$showgroup}}</span>
 					</a>
 				</div>
@@ -78,7 +78,7 @@
 
 		{{if $contact.location}}
 		<div class="location detail">
-			<span class="location-label icon"><i class="fa fa-map-marker"></i></span>
+			<span class="location-label icon"><i class="fa ri-map-pin-2-line"></i></span>
 			<span class="adr p-location">{{$contact.location}}</span>
 		</div>
 		{{/if}}

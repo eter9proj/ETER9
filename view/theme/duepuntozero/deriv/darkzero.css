@@ -10,7 +10,7 @@ input, select, textarea {
 }
 .openid { background-color: #222222;}
 
-body { 	background-color: #222222; color: #cccccc; background-image: url('imgdarkzero/head.jpg'); }
+body { 	background-color: #222222; color: #CCCCCCccc; background-image: url('imgdarkzero/head.jpg'); }
 aside{ 	background-image: url('imgdarkzero/border.jpg'); padding-bottom: 0px; }
 section { background-color: #333333;	background-image: url('imgdarkzero/border.jpg'); }
 #panel { background-color: #2e2f2e;}
@@ -123,7 +123,7 @@ input#dfrn-url {
 #jot-title:focus,
 #jot-category:hover,
 #jot-category:focus {
-	border: 1px solid #cccccc;
+	border: 1px solid #CCCCCCccc;
 }
 
 #profile-jot-email-label, div#jot-preview-content, div.profile-jot-net {

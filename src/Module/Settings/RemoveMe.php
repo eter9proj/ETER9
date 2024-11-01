@@ -87,9 +87,9 @@ class RemoveMe extends BaseSettings
 			$email = $this->emailer
 				->newSystemMail()
 				->withMessage(
-					$l10n->t('[Friendica System Notify]') . ' ' . $l10n->t('User deleted their account'),
-					$l10n->t('On your Friendica node an user deleted their account. Please ensure that their data is removed from the backups.'),
-					$l10n->t('The user id is %d', $this->session->getLocalUserId()))
+					$l10n->t('[ETER9 Platform]') . ' ' . $l10n->t('The user has deleted their account'),
+					$l10n->t('On your ETER9 node an user deleted their account. Please ensure that their data is removed from the backups.'),
+					$l10n->t('The user ID is %d', $this->session->getLocalUserId()))
 				->forUser($admin)
 				->withRecipient($admin['email'])
 				->build();
@@ -102,7 +102,7 @@ class RemoveMe extends BaseSettings
 			$this->session->clear();
 			$this->cookie->clear();
 
-			$this->systemMessages->addInfo($this->t('Your account has been successfully removed. Bye bye!'));
+			$this->systemMessages->addInfo($this->t('Your account has been successfully removed. Goodbye!'));
 			$this->baseUrl->redirect();
 		} catch (\RuntimeException $e) {
 			$this->systemMessages->addNotice($e->getMessage());
@@ -128,7 +128,7 @@ class RemoveMe extends BaseSettings
 		return Renderer::replaceMacros($tpl, [
 			'$l10n' => [
 				'title' => DI::l10n()->t('Remove My Account'),
-				'desc'  => DI::l10n()->t('This will completely remove your account. Once this has been done it is not recoverable.'),
+				'desc'  => DI::l10n()->t('This action will permanently delete your account, and it cannot be recovered once completed.'),
 			],
 
 			'$hovercard' => Widget\Hovercard::getHTML(User::getOwnerDataById($this->session->getLocalUserId())),
