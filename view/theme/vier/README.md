@@ -1,4 +1,0 @@
-vier
-====
-
-Friendica theme "vier"
